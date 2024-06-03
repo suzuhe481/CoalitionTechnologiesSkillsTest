@@ -1,0 +1,11 @@
+body {
+  width: 100%;
+
+  top: 0px;
+  left: 0px;
+  width: 1600px;
+  height: 1195px;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  /* background: #2d6fb1 0% 0% no-repeat padding-box; */
+  opacity: 1;
+}

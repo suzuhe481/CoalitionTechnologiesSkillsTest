@@ -1,0 +1,125 @@
+.patients-list-container {
+  position: relative;
+
+  left: 18px;
+  width: 367px;
+  height: 1054px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    margin-top: 10px;
+    padding: 0 15px;
+
+    .title {
+      width: 100px;
+      height: 33px;
+      font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-800) var(--unnamed-font-size-24) /
+        var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-072635);
+      text-align: left;
+      font: normal normal 800 24px/33px Manrope;
+      letter-spacing: 0px;
+      color: #072635;
+      opacity: 1;
+    }
+
+    .search {
+      width: 18px;
+      height: 18px;
+      opacity: 1;
+    }
+  }
+
+  .patients-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+
+    height: 1054px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+
+    overflow-y: scroll;
+
+    /* width */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      border-radius: 100px;
+      background: #e3e4e6;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #072635;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: #858585;
+    }
+  }
+
+  .single-patient-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+
+    &.selected {
+      background: var(--activestate_bg_2) 0% 0% no-repeat padding-box;
+      background: #d8fcf7 0% 0% no-repeat padding-box;
+    }
+
+    .patient-left {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-left: 20px;
+
+      .patient-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .patient-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 48px;
+        height: 48px;
+        opacity: 1;
+        border-radius: 100px;
+      }
+    }
+
+    .patient-settings {
+      margin-right: 30px;
+
+      width: 18px;
+      height: 4px;
+      opacity: 1;
+    }
+  }
+}

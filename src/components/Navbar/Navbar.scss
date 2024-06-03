@@ -1,0 +1,169 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 18px;
+  margin-top: 18px;
+
+  width: 95vw;
+  height: 72px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
+
+  .logo {
+    margin-left: 32px;
+
+    width: 211px;
+    height: 48px;
+    opacity: 1;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    * {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      gap: 9px;
+    }
+
+    .text {
+      width: 63px;
+      height: 19px;
+      font: var(--unnamed-font-style-normal) normal
+        var(--unnamed-font-weight-bold) var(--unnamed-font-size-14) /
+        var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      color: var(--unnamed-color-072635);
+      text-align: left;
+      font: normal normal bold 14px/19px Manrope;
+      letter-spacing: 0px;
+      color: #072635;
+      opacity: 1;
+    }
+
+    .selected {
+      width: 122px;
+      height: 41px;
+      background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+      border-radius: 41px;
+      opacity: 1;
+    }
+
+    .overview {
+      width: 16px;
+      height: 17px;
+      opacity: 1;
+    }
+
+    .patients {
+      width: 24px;
+      height: 17px;
+      opacity: 1;
+    }
+
+    .schedule {
+      width: 15px;
+      height: 17px;
+      opacity: 1;
+    }
+
+    .message {
+      width: 19px;
+      height: 17px;
+      opacity: 1;
+    }
+
+    .transactions {
+      width: 22px;
+      height: 17px;
+      opacity: 1;
+    }
+  }
+
+  .doctor-and-settings {
+    display: flex;
+    flex-direction: row;
+    margin-right: 32px;
+
+    .doctor {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+      .doctor-image {
+        width: 44px;
+        height: 44px;
+        opacity: 1;
+      }
+
+      .doctor-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        .name {
+          width: 119px;
+          height: 19px;
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-bold) var(--unnamed-font-size-14) /
+            var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+          letter-spacing: var(--unnamed-character-spacing-0);
+          color: var(--unnamed-color-072635);
+          text-align: left;
+          font: normal normal bold 14px/19px Manrope;
+          letter-spacing: 0px;
+          color: #072635;
+          opacity: 1;
+        }
+
+        .title {
+          width: 129px;
+          height: 19px;
+          font: var(--unnamed-font-style-normal) normal
+            var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+            var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+          letter-spacing: var(--unnamed-character-spacing-0);
+          color: var(--unnamed-color-707070);
+          text-align: left;
+          font: normal normal normal 14px/19px Manrope;
+          letter-spacing: 0px;
+          color: #707070;
+          opacity: 1;
+        }
+      }
+    }
+
+    .settings {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      gap: 15px;
+
+      .cog {
+        width: 19px;
+        height: 20px;
+        opacity: 1;
+      }
+
+      .dots {
+        width: 4px;
+        height: 18px;
+        opacity: 1;
+      }
+    }
+  }
+}
